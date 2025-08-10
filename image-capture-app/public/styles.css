@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; background: #0f172a; color: #e2e8f0; }
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+
+h1 { font-size: 28px; margin: 0 0 16px; }
+h2 { font-size: 20px; margin: 24px 0 8px; }
+
+.camera { position: relative; background: #111827; border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; }
+video, canvas { display: block; width: 100%; height: auto; background: black; }
+
+.controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin: 16px 0; }
+button, .link { appearance: none; border: 0; padding: 10px 14px; border-radius: 10px; cursor: pointer; font-weight: 600; }
+button { background: #334155; color: #e2e8f0; border: 1px solid #475569; }
+button.primary { background: #2563eb; border-color: #2563eb; color: white; }
+button.secondary { background: #0ea5e9; border-color: #0ea5e9; color: #05253a; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.link { color: #93c5fd; text-decoration: none; border: 1px solid #1f2937; background: #0b1220; }
+
+.status { min-height: 24px; padding: 8px 0; color: #cbd5e1; }
+.status.success { color: #10b981; }
+.status.error { color: #f87171; }
+
+.result img { max-width: 100%; border-radius: 8px; border: 1px solid #1f2937; }
+
+.hidden { display: none !important; }

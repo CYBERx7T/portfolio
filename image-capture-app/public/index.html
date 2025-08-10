@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camera Capture</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Camera Capture</h1>
+
+    <section class="camera">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" class="hidden"></canvas>
+    </section>
+
+    <section class="controls">
+      <button id="startBtn">Start Camera</button>
+      <button id="captureBtn" disabled>Capture</button>
+      <button id="retakeBtn" class="secondary" disabled>Retake</button>
+      <button id="saveBtn" class="primary" disabled>Save</button>
+      <a id="downloadLink" class="link hidden" download="capture.png">Download</a>
+    </section>
+
+    <section id="status" class="status"></section>
+
+    <section id="result" class="result hidden">
+      <h2>Last Upload</h2>
+      <img id="uploadedImage" alt="Uploaded"/>
+      <p>
+        <a id="uploadedUrl" target="_blank" rel="noopener noreferrer">Open image</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
